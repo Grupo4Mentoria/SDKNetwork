@@ -16,6 +16,10 @@
 		B0E939AF2A9DEB8B00413C3E /* SDKNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939AE2A9DEB8B00413C3E /* SDKNetworkTests.swift */; };
 		B0E939B92A9DEB8B00413C3E /* SDKNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939B82A9DEB8B00413C3E /* SDKNetworkUITests.swift */; };
 		B0E939BB2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */; };
+		B0E939D92A9E07B400413C3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939D82A9E07B400413C3E /* Endpoint.swift */; };
+		B0E939DB2A9E07D300413C3E /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */; };
+		B0E939DD2A9E07F300413C3E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DC2A9E07F300413C3E /* NetworkError.swift */; };
+		B0E939DF2A9E081200413C3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DE2A9E081200413C3E /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B0E939B42A9DEB8B00413C3E /* SDKNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E939B82A9DEB8B00413C3E /* SDKNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkUITests.swift; sourceTree = "<group>"; };
 		B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0E939D82A9E07B400413C3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		B0E939DC2A9E07F300413C3E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B0E939DE2A9E081200413C3E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		B0E939962A9DEB8400413C3E /* SDKNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				B0E939D52A9E078900413C3E /* API */,
 				B0E939972A9DEB8400413C3E /* AppDelegate.swift */,
 				B0E939992A9DEB8400413C3E /* SceneDelegate.swift */,
 				B0E9399B2A9DEB8400413C3E /* ViewController.swift */,
@@ -125,6 +134,33 @@
 				B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */,
 			);
 			path = SDKNetworkUITests;
+			sourceTree = "<group>";
+		};
+		B0E939D52A9E078900413C3E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B0E939D72A9E07A300413C3E /* Provider */,
+				B0E939D62A9E079800413C3E /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B0E939D62A9E079800413C3E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B0E939D82A9E07B400413C3E /* Endpoint.swift */,
+				B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */,
+				B0E939DC2A9E07F300413C3E /* NetworkError.swift */,
+				B0E939DE2A9E081200413C3E /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B0E939D72A9E07A300413C3E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E939DB2A9E07D300413C3E /* RequestBuilder.swift in Sources */,
 				B0E9399C2A9DEB8400413C3E /* ViewController.swift in Sources */,
 				B0E939982A9DEB8400413C3E /* AppDelegate.swift in Sources */,
+				B0E939DD2A9E07F300413C3E /* NetworkError.swift in Sources */,
+				B0E939D92A9E07B400413C3E /* Endpoint.swift in Sources */,
 				B0E9399A2A9DEB8400413C3E /* SceneDelegate.swift in Sources */,
+				B0E939DF2A9E081200413C3E /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
