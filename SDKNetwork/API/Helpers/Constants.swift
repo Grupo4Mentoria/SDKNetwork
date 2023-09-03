@@ -10,5 +10,7 @@ import Foundation
 public struct Constants {
     public static let defaultToken = "CodandoComMoa"
     public static let baseURL = "http://mentoria.codandocommoa.com.br"
+    public static let themeAPI = "Api/Theme"
+    public static let themeComponentAPI = "Api/ThemeComponent"
 }
 
