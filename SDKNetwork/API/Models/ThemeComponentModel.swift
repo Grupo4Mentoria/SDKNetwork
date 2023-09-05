@@ -15,12 +15,30 @@ struct ThemeComponentModel: Codable {
     public let backgroundColor: String?
     public let fontName: String?
     public let fontSize: Int?
-    public let style: String?
+    public let style: Int?
     public let id: Int?
     public let isInativo: Bool?
-    public let creationDate: Date?
-    public let changeDate: Date?
+    public let creationDate: String?
+    public let changeDate: String?
     public let uid: String?
     public let uidFirebase: String?
     public let isChanged: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case themeId = "ThemeId"
+        case theme = "Theme"
+        case name = "Name"
+        case foregroundColor = "ForegroundColor"
+        case backgroundColor = "BackgroundColor"
+        case fontName = "FontName"
+        case fontSize = "FontSize"
+        case style = "Style"
+        case id = "Id"
+        case isInativo = "IsInativo"
+        case creationDate = "CreationDate"
+        case changeDate = "ChangeDate"
+        case uid = "Uid"
+        case uidFirebase = "UidFirebase"
+        case isChanged = "IsChanged"
+    }
 }

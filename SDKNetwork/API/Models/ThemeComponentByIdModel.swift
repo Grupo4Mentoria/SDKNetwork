@@ -9,13 +9,22 @@ import Foundation
 
 struct ThemeComponentByIdModel: Codable {
     public let result: ThemeComponentModel
-    public let resultJson: String
-    public let isSuccess: Bool
-    public let message: String
+    public let resultJson: String?
+    public let isSuccess: Bool?
+    public let message: String?
     public let exception: Exception
-    public let stackTrace: String
+    public let stackTrace: String?
     
     struct Exception: Codable {
         // if necessary
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case result = "Result"
+        case resultJson = "ResultJson"
+        case isSuccess = "IsSucess"
+        case message = "Message"
+        case exception = "Exception"
+        case stackTrace = "StackTrace"
     }
 }

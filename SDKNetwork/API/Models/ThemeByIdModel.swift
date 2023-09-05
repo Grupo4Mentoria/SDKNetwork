@@ -14,6 +14,15 @@ struct ThemeByIdModel: Codable {
     let message: String?
     let exception: String?
     let stackTrace: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case result = "Result"
+        case resultJson = "ResultJson"
+        case isSuccess = "IsSuccess"
+        case message = "Message"
+        case exception = "Exception"
+        case stackTrace = "StackTrace"
+    }
 }
 
 
