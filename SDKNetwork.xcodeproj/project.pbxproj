@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51848E842AA7FC1D00F5D3EA /* SDKNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */; };
 		97CB05B82AA4CD1C004A5B67 /* ThemeComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */; };
 		97CB05BA2AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */; };
 		97CB05BC2AA4CDB4004A5B67 /* ThemeComponentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05BB2AA4CDB4004A5B67 /* ThemeComponentProvider.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkLogger.swift; sourceTree = "<group>"; };
 		97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentModel.swift; sourceTree = "<group>"; };
 		97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentByIdModel.swift; sourceTree = "<group>"; };
 		97CB05BB2AA4CDB4004A5B67 /* ThemeComponentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentProvider.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51848E822AA7FBDF00F5D3EA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		973A0ACA2AA6A15F00FA547E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		B0E939D52A9E078900413C3E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				51848E822AA7FBDF00F5D3EA /* Logger */,
 				973A0ACA2AA6A15F00FA547E /* Models */,
 				97D4360A2AA39631005C81E6 /* Helpers */,
 				B0E939D72A9E07A300413C3E /* Provider */,
@@ -334,6 +345,7 @@
 				B0E939DB2A9E07D300413C3E /* RequestBuilder.swift in Sources */,
 				97D4360E2AA3A481005C81E6 /* ThemeByIdModel.swift in Sources */,
 				97CB05BC2AA4CDB4004A5B67 /* ThemeComponentProvider.swift in Sources */,
+				51848E842AA7FC1D00F5D3EA /* SDKNetworkLogger.swift in Sources */,
 				B0E9399C2A9DEB8400413C3E /* ViewController.swift in Sources */,
 				97CB05B82AA4CD1C004A5B67 /* ThemeComponentModel.swift in Sources */,
 				B0E939982A9DEB8400413C3E /* AppDelegate.swift in Sources */,

@@ -14,3 +14,12 @@ public struct Constants {
     public static let themeComponentAPI = "Api/ThemeComponent"
 }
 
+extension String {
+    static let empty = String()
+}
+
+extension Data {
+    func toString() -> String? {
+        return String(data: self, encoding: .utf8)
+    }
+}

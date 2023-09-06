@@ -13,6 +13,8 @@ protocol NetworkServiceProtocol: AnyObject {
 
 class NetworkService: NetworkServiceProtocol {
     
+    var networkLogger = SDKNetworkLogger()
+    
     static var shared: NetworkService = NetworkService()
     
     private var urlSession: URLSession
@@ -25,6 +27,8 @@ class NetworkService: NetworkServiceProtocol {
     
     func request<T>(with endpoint: Endpoint, decodeType: T.Type, completionHandler: @escaping (Result<T, NetworkError>) -> Void) where T : Decodable {
         
+        networkLogger.debugRequest(endpoint)
+        
         guard let url = URL(string: endpoint.url) else {
             completionHandler(.failure(.invalidURL(url: endpoint.url)))
             return
@@ -33,6 +37,7 @@ class NetworkService: NetworkServiceProtocol {
         let request = requestBuilder.buildRequest(with: endpoint, url: url)
         
         let task = urlSession.dataTask(with: request) { data, response, error in
+            
             
             DispatchQueue.main.async {
                 if let error {
@@ -50,12 +55,17 @@ class NetworkService: NetworkServiceProtocol {
                     return
                 }
                 
+                self.networkLogger.debugResponse(data, response.statusCode)
+                
                 do {
                     let object: T = try JSONDecoder().decode(T.self, from: data)
                     completionHandler(.success(object))
                 } catch {
                     completionHandler(.failure(.decodingError(error)))
+                    self.networkLogger.debugError(error)
                 }
+                
+                
             }
         }
         
