@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51848E842AA7FC1D00F5D3EA /* SDKNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */; };
+		97CB05B82AA4CD1C004A5B67 /* ThemeComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */; };
+		97CB05BA2AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */; };
+		97CB05BC2AA4CDB4004A5B67 /* ThemeComponentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB05BB2AA4CDB4004A5B67 /* ThemeComponentProvider.swift */; };
+		97D436072AA3957C005C81E6 /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D436062AA3957C005C81E6 /* ThemeProvider.swift */; };
+		97D436092AA395D4005C81E6 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D436082AA395D4005C81E6 /* ThemeModel.swift */; };
+		97D4360C2AA3969F005C81E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4360B2AA3969F005C81E6 /* Constants.swift */; };
+		97D4360E2AA3A481005C81E6 /* ThemeByIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4360D2AA3A481005C81E6 /* ThemeByIdModel.swift */; };
 		B0E939982A9DEB8400413C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939972A9DEB8400413C3E /* AppDelegate.swift */; };
 		B0E9399A2A9DEB8400413C3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939992A9DEB8400413C3E /* SceneDelegate.swift */; };
 		B0E9399C2A9DEB8400413C3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E9399B2A9DEB8400413C3E /* ViewController.swift */; };
@@ -16,6 +24,10 @@
 		B0E939AF2A9DEB8B00413C3E /* SDKNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939AE2A9DEB8B00413C3E /* SDKNetworkTests.swift */; };
 		B0E939B92A9DEB8B00413C3E /* SDKNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939B82A9DEB8B00413C3E /* SDKNetworkUITests.swift */; };
 		B0E939BB2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */; };
+		B0E939D92A9E07B400413C3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939D82A9E07B400413C3E /* Endpoint.swift */; };
+		B0E939DB2A9E07D300413C3E /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */; };
+		B0E939DD2A9E07F300413C3E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DC2A9E07F300413C3E /* NetworkError.swift */; };
+		B0E939DF2A9E081200413C3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E939DE2A9E081200413C3E /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkLogger.swift; sourceTree = "<group>"; };
+		97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentModel.swift; sourceTree = "<group>"; };
+		97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentByIdModel.swift; sourceTree = "<group>"; };
+		97CB05BB2AA4CDB4004A5B67 /* ThemeComponentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentProvider.swift; sourceTree = "<group>"; };
+		97D436062AA3957C005C81E6 /* ThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProvider.swift; sourceTree = "<group>"; };
+		97D436082AA395D4005C81E6 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		97D4360B2AA3969F005C81E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		97D4360D2AA3A481005C81E6 /* ThemeByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeByIdModel.swift; sourceTree = "<group>"; };
 		B0E939942A9DEB8400413C3E /* SDKNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E939972A9DEB8400413C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E939992A9DEB8400413C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,10 @@
 		B0E939B42A9DEB8B00413C3E /* SDKNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E939B82A9DEB8B00413C3E /* SDKNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkUITests.swift; sourceTree = "<group>"; };
 		B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0E939D82A9E07B400413C3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		B0E939DC2A9E07F300413C3E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B0E939DE2A9E081200413C3E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51848E822AA7FBDF00F5D3EA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		973A0ACA2AA6A15F00FA547E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97D436082AA395D4005C81E6 /* ThemeModel.swift */,
+				97D4360D2AA3A481005C81E6 /* ThemeByIdModel.swift */,
+				97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */,
+				97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97D4360A2AA39631005C81E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				97D4360B2AA3969F005C81E6 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B0E9398B2A9DEB8400413C3E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +150,7 @@
 		B0E939962A9DEB8400413C3E /* SDKNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				B0E939D52A9E078900413C3E /* API */,
 				B0E939972A9DEB8400413C3E /* AppDelegate.swift */,
 				B0E939992A9DEB8400413C3E /* SceneDelegate.swift */,
 				B0E9399B2A9DEB8400413C3E /* ViewController.swift */,
@@ -125,6 +177,38 @@
 				B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */,
 			);
 			path = SDKNetworkUITests;
+			sourceTree = "<group>";
+		};
+		B0E939D52A9E078900413C3E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				51848E822AA7FBDF00F5D3EA /* Logger */,
+				973A0ACA2AA6A15F00FA547E /* Models */,
+				97D4360A2AA39631005C81E6 /* Helpers */,
+				B0E939D72A9E07A300413C3E /* Provider */,
+				B0E939D62A9E079800413C3E /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B0E939D62A9E079800413C3E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B0E939D82A9E07B400413C3E /* Endpoint.swift */,
+				B0E939DA2A9E07D300413C3E /* RequestBuilder.swift */,
+				B0E939DC2A9E07F300413C3E /* NetworkError.swift */,
+				B0E939DE2A9E081200413C3E /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B0E939D72A9E07A300413C3E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				97CB05BB2AA4CDB4004A5B67 /* ThemeComponentProvider.swift */,
+				97D436062AA3957C005C81E6 /* ThemeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +342,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E939DB2A9E07D300413C3E /* RequestBuilder.swift in Sources */,
+				97D4360E2AA3A481005C81E6 /* ThemeByIdModel.swift in Sources */,
+				97CB05BC2AA4CDB4004A5B67 /* ThemeComponentProvider.swift in Sources */,
+				51848E842AA7FC1D00F5D3EA /* SDKNetworkLogger.swift in Sources */,
 				B0E9399C2A9DEB8400413C3E /* ViewController.swift in Sources */,
+				97CB05B82AA4CD1C004A5B67 /* ThemeComponentModel.swift in Sources */,
 				B0E939982A9DEB8400413C3E /* AppDelegate.swift in Sources */,
+				B0E939DD2A9E07F300413C3E /* NetworkError.swift in Sources */,
+				97D436072AA3957C005C81E6 /* ThemeProvider.swift in Sources */,
+				97D4360C2AA3969F005C81E6 /* Constants.swift in Sources */,
+				B0E939D92A9E07B400413C3E /* Endpoint.swift in Sources */,
+				97CB05BA2AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift in Sources */,
+				97D436092AA395D4005C81E6 /* ThemeModel.swift in Sources */,
 				B0E9399A2A9DEB8400413C3E /* SceneDelegate.swift in Sources */,
+				B0E939DF2A9E081200413C3E /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +538,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N9WSHT9GA5;
+				DEVELOPMENT_TEAM = N5S7W7FGTR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SDKNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,12 +546,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.cesarsilva.SDKNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.alex-dll.SDKNetwork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +567,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N9WSHT9GA5;
+				DEVELOPMENT_TEAM = N5S7W7FGTR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SDKNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,12 +575,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.cesarsilva.SDKNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.alex-dll.SDKNetwork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
