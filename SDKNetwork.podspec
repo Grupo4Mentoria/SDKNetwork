@@ -7,7 +7,4 @@ Pod::Spec.new do |spec|
     spec.summary          = 'SDKNetwork.'
     spec.source           = { :git => 'https://github.com/Grupo4Mentoria/SDKNetwork.git', :tag => "#{spec.version}" }
     spec.source_files     = 'API/**/*'
-
-    spec.swift_version = '5.3'
-    spec.ios.deveployment_target = '14'
 end
