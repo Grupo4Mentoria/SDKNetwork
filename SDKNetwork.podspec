@@ -6,5 +6,5 @@ Pod::Spec.new do |spec|
     spec.authors          = { 'Grupo4' => 'grupo4mentoria@gmail.com' }
     spec.summary          = 'SDKNetwork.'
     spec.source           = { :git => 'https://github.com/Grupo4Mentoria/SDKNetwork.git', :tag => "#{spec.version}" }
-    spec.source_files     = 'API/**/*'
+    spec.source_files     = 'API/*'
 end

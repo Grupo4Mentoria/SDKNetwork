@@ -56,7 +56,7 @@
 		97D436082AA395D4005C81E6 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
 		97D4360B2AA3969F005C81E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		97D4360D2AA3A481005C81E6 /* ThemeByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeByIdModel.swift; sourceTree = "<group>"; };
-		B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; name = SDKNetwork.podspec; path = SDKNetwork/SDKNetwork.podspec; sourceTree = "<group>"; };
+		B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDKNetwork.podspec; sourceTree = "<group>"; };
 		B0E939942A9DEB8400413C3E /* SDKNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E939972A9DEB8400413C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E939992A9DEB8400413C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +131,6 @@
 		B0E9398B2A9DEB8400413C3E = {
 			isa = PBXGroup;
 			children = (
-				B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */,
 				B0E939962A9DEB8400413C3E /* SDKNetwork */,
 				B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */,
 				B0E939B72A9DEB8B00413C3E /* SDKNetworkUITests */,
@@ -159,6 +158,7 @@
 				B0E9399D2A9DEB8400413C3E /* Main.storyboard */,
 				B0E939A02A9DEB8A00413C3E /* Assets.xcassets */,
 				B0E939A22A9DEB8A00413C3E /* LaunchScreen.storyboard */,
+				B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */,
 				B0E939A52A9DEB8A00413C3E /* Info.plist */,
 			);
 			path = SDKNetwork;
