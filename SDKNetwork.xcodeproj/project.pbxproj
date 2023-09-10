@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SDKNetwork.podspec.md; sourceTree = "<group>"; };
 		51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkLogger.swift; sourceTree = "<group>"; };
 		97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentModel.swift; sourceTree = "<group>"; };
 		97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentByIdModel.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		97D436082AA395D4005C81E6 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
 		97D4360B2AA3969F005C81E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		97D4360D2AA3A481005C81E6 /* ThemeByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeByIdModel.swift; sourceTree = "<group>"; };
-		B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDKNetwork.podspec; sourceTree = "<group>"; };
 		B0E939942A9DEB8400413C3E /* SDKNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E939972A9DEB8400413C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E939992A9DEB8400413C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512B51712AAE0FDE007A1D79 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				512B51722AAE10A6007A1D79 /* Network */,
+				512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		512B51722AAE10A6007A1D79 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				97D4360A2AA39631005C81E6 /* Helpers */,
+				51848E822AA7FBDF00F5D3EA /* Logger */,
+				973A0ACA2AA6A15F00FA547E /* Models */,
+				B0E939D72A9E07A300413C3E /* Provider */,
+				B0E939D62A9E079800413C3E /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		51848E822AA7FBDF00F5D3EA /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +152,7 @@
 		B0E9398B2A9DEB8400413C3E = {
 			isa = PBXGroup;
 			children = (
+				512B51712AAE0FDE007A1D79 /* Source */,
 				B0E939962A9DEB8400413C3E /* SDKNetwork */,
 				B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */,
 				B0E939B72A9DEB8B00413C3E /* SDKNetworkUITests */,
@@ -151,14 +173,12 @@
 		B0E939962A9DEB8400413C3E /* SDKNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				B0E939D52A9E078900413C3E /* API */,
 				B0E939972A9DEB8400413C3E /* AppDelegate.swift */,
 				B0E939992A9DEB8400413C3E /* SceneDelegate.swift */,
 				B0E9399B2A9DEB8400413C3E /* ViewController.swift */,
 				B0E9399D2A9DEB8400413C3E /* Main.storyboard */,
 				B0E939A02A9DEB8A00413C3E /* Assets.xcassets */,
 				B0E939A22A9DEB8A00413C3E /* LaunchScreen.storyboard */,
-				B0D7131D2AABE77C00C4967B /* SDKNetwork.podspec */,
 				B0E939A52A9DEB8A00413C3E /* Info.plist */,
 			);
 			path = SDKNetwork;
@@ -179,18 +199,6 @@
 				B0E939BA2A9DEB8B00413C3E /* SDKNetworkUITestsLaunchTests.swift */,
 			);
 			path = SDKNetworkUITests;
-			sourceTree = "<group>";
-		};
-		B0E939D52A9E078900413C3E /* API */ = {
-			isa = PBXGroup;
-			children = (
-				51848E822AA7FBDF00F5D3EA /* Logger */,
-				973A0ACA2AA6A15F00FA547E /* Models */,
-				97D4360A2AA39631005C81E6 /* Helpers */,
-				B0E939D72A9E07A300413C3E /* Provider */,
-				B0E939D62A9E079800413C3E /* Service */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		B0E939D62A9E079800413C3E /* Service */ = {
