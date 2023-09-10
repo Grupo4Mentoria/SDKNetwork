@@ -45,8 +45,8 @@ public class SDKNetworkLogger {
         }
     }
     
-    func debugError(_ error: Error) {
-        logger.debugText("[NetworkDebug] RESPONSE: \n \(error.localizedDescription)")
+    func debugError(_ error: NetworkError) {
+        logger.debugText("[NetworkDebug] RESPONSE: \n \(error.errorDescription ?? "ERROR")")
     }
     
 }

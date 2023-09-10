@@ -31,6 +31,7 @@ public class NetworkService: NetworkServiceProtocol {
         
         guard let url = URL(string: endpoint.url) else {
             completionHandler(.failure(.invalidURL(url: endpoint.url)))
+            self.networkLogger.debugError(.invalidURL(url: endpoint.url))
             return
         }
         
@@ -42,16 +43,19 @@ public class NetworkService: NetworkServiceProtocol {
             DispatchQueue.main.async {
                 if let error {
                     completionHandler(.failure(.networkFailure(error)))
+                    self.networkLogger.debugError(.networkFailure(error))
                     return
                 }
                 
                 guard let data else {
                     completionHandler(.failure(.noData))
+                    self.networkLogger.debugError(.noData)
                     return
                 }
                 
                 guard let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode else {
                     completionHandler(.failure(.invalidResponse))
+                    self.networkLogger.debugError(.invalidResponse)
                     return
                 }
                 
@@ -62,7 +66,7 @@ public class NetworkService: NetworkServiceProtocol {
                     completionHandler(.success(object))
                 } catch {
                     completionHandler(.failure(.decodingError(error)))
-                    self.networkLogger.debugError(error)
+                    self.networkLogger.debugError(.decodingError(error))
                 }
                 
                 
