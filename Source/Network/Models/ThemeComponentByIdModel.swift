@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ThemeComponentByIdModel: Codable {
+public struct ThemeComponentByIdModel: Codable {
     public let result: ThemeComponentModel
     public let resultJson: String?
     public let isSuccess: Bool?
@@ -15,7 +15,7 @@ struct ThemeComponentByIdModel: Codable {
     public let exception: Exception
     public let stackTrace: String?
     
-    struct Exception: Codable {
+    public struct Exception: Codable {
         // if necessary
     }
     

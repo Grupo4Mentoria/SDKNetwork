@@ -11,7 +11,7 @@ protocol RequestBuilderProtocol: AnyObject {
     func buildRequest(with endpoint: Endpoint, url: URL) -> URLRequest
 }
 
-class RequestBuilder: RequestBuilderProtocol {
+public class RequestBuilder: RequestBuilderProtocol {
     func buildRequest(with endpoint: Endpoint, url: URL) -> URLRequest {
         var request = URLRequest(url: url)
         

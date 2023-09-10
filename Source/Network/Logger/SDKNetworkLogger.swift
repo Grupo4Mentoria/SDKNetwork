@@ -11,7 +11,7 @@ protocol Printable {
     func debugText(_ text: String)
 }
 
-class SDKNetworkLogger {
+public class SDKNetworkLogger {
     
     let logger: Printable
     

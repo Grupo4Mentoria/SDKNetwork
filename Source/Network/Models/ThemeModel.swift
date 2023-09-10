@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ThemeModel: Codable {
+public struct ThemeModel: Codable {
     public let name: String?
     public let id: Int?
     public let isInativo: Bool?

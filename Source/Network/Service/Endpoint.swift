@@ -7,19 +7,19 @@
 
 import Foundation
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
     case delete = "DELETE"
 }
 
-enum Parameters {
+public enum Parameters {
     case dictionary([String: Any])
     case encodable(Encodable)
 }
 
-struct Endpoint {
+public struct Endpoint {
     
     let url: String
     let method: HTTPMethod

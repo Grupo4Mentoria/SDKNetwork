@@ -11,7 +11,7 @@ protocol NetworkServiceProtocol: AnyObject {
     func request<T: Decodable>(with endpoint: Endpoint, decodeType: T.Type, completionHandler: @escaping(Result<T, NetworkError>) -> Void)
 }
 
-class NetworkService: NetworkServiceProtocol {
+public class NetworkService: NetworkServiceProtocol {
     
     var networkLogger = SDKNetworkLogger()
     

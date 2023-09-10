@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ThemeByIdModel: Codable {
+public struct ThemeByIdModel: Codable {
     let result: ThemeModel
     let resultJson: String?
     let isSuccess: Bool?

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ThemeComponentModel: Codable {
+public struct ThemeComponentModel: Codable {
     public let themeId: Int?
     public let theme: ThemeModel
     public let name: String?
