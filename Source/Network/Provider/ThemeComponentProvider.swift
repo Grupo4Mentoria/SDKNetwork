@@ -14,13 +14,13 @@ public class ThemeComponentProvider {
     
     let networkService = NetworkService()
     
-    func getThemeComponentList(themeId: Int, completion: @escaping (Result<[ThemeComponentModel], NetworkError>) -> Void) {
+    public func getThemeComponentList(themeId: Int, completion: @escaping (Result<[ThemeComponentModel], NetworkError>) -> Void) {
         let EndPoint = Endpoint(url: "\(Constants.baseURL)/\(Constants.themeComponentAPI)/GetListaThemeComponent?themeId=\(themeId)&uIdFirebase=\(Constants.defaultToken)")
         
         return networkService.request(with: EndPoint, decodeType: [ThemeComponentModel].self, completionHandler: completion)
     }
     
-    func getThemeComponentById(id: Int, completion: @escaping (Result<ThemeComponentByIdModel, NetworkError>) -> Void) {
+    public func getThemeComponentById(id: Int, completion: @escaping (Result<ThemeComponentByIdModel, NetworkError>) -> Void) {
         let EndPoint = Endpoint(url: "\(Constants.baseURL)/\(Constants.themeComponentAPI)/GetThemeComponentById?id=\(id)&uIdFirebase=\(Constants.defaultToken)")
         
         return networkService.request(with: EndPoint, decodeType: ThemeComponentByIdModel.self, completionHandler: completion)
