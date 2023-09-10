@@ -105,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				512B51722AAE10A6007A1D79 /* Network */,
-				512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -152,6 +151,7 @@
 		B0E9398B2A9DEB8400413C3E = {
 			isa = PBXGroup;
 			children = (
+				512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */,
 				512B51712AAE0FDE007A1D79 /* Source */,
 				B0E939962A9DEB8400413C3E /* SDKNetwork */,
 				B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */,
