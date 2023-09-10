@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SDKNetwork.podspec.md; sourceTree = "<group>"; };
+		512B51752AAE117A007A1D79 /* SDKNetwork.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SDKNetwork.podspec; sourceTree = "<group>"; };
 		51848E832AA7FC1D00F5D3EA /* SDKNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNetworkLogger.swift; sourceTree = "<group>"; };
 		97CB05B72AA4CD1C004A5B67 /* ThemeComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentModel.swift; sourceTree = "<group>"; };
 		97CB05B92AA4CD8A004A5B67 /* ThemeComponentByIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentByIdModel.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		B0E9398B2A9DEB8400413C3E = {
 			isa = PBXGroup;
 			children = (
-				512B51752AAE117A007A1D79 /* SDKNetwork.podspec.md */,
+				512B51752AAE117A007A1D79 /* SDKNetwork.podspec */,
 				512B51712AAE0FDE007A1D79 /* Source */,
 				B0E939962A9DEB8400413C3E /* SDKNetwork */,
 				B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */,
