@@ -9,5 +9,5 @@ Pod::Spec.new do |spec|
     
     spec.swift_version = '5.3'
     spec.ios.deployment_target = '14'
-    spec.source_files     = 'Source/Network/**/*'
+    spec.source_files     = 'Source/Network/*'
 end
