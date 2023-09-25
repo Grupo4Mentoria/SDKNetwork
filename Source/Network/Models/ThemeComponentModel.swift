@@ -9,7 +9,7 @@ import Foundation
 
 public struct ThemeComponentModel: Codable {
     public let themeId: Int?
-    public let theme: ThemeModel
+    public let theme: ThemeModel?
     public let name: String?
     public let foregroundColor: String?
     public let backgroundColor: String?

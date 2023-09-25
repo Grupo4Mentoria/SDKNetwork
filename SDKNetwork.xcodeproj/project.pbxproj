@@ -155,7 +155,6 @@
 				512B51712AAE0FDE007A1D79 /* Source */,
 				B0E939962A9DEB8400413C3E /* SDKNetwork */,
 				B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */,
-				B0E939B72A9DEB8B00413C3E /* SDKNetworkUITests */,
 				B0E939952A9DEB8400413C3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,6 +186,7 @@
 		B0E939AD2A9DEB8B00413C3E /* SDKNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				B0E939B72A9DEB8B00413C3E /* SDKNetworkUITests */,
 				B0E939AE2A9DEB8B00413C3E /* SDKNetworkTests.swift */,
 			);
 			path = SDKNetworkTests;

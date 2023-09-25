@@ -8,7 +8,7 @@
 import Foundation
 
 public struct ThemeComponentByIdModel: Codable {
-    public let result: ThemeComponentModel
+    public let result: ThemeComponentModel?
     public let resultJson: String?
     public let isSuccess: Bool?
     public let message: String?
